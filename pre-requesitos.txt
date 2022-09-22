@@ -1,0 +1,5 @@
+Nodemon    (nodemon -v)
+typescript (tsc -v)
+ts-node    (ts-node -v)
+
+npm list -g --depth=0
