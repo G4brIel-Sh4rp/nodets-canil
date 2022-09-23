@@ -4,7 +4,9 @@ import { Pet } from "../models/Pet";
 
 export const search = (req: Request, res: Response)=>{
     const name = req.query.q as string;
-    
+    if(!name){
+        return res.redirect('/');
+    }
     const list = Pet.getFromName(name);
 
     res.render('pages/main',{
